@@ -13,7 +13,7 @@ boundary_conditions:
             value:        [0, 0, 0]                                   # Directional velocity vector components (or USER, AUTO_GENERATE (piston motion), MOTION_CONFIG, profile name).
          pressure:
             type:         Dirichlet_total                             # Pressure type: Neumann, Dirichlet, Dirichlet_total (for INFLOW), Transonic (for OUTFLOW).
-            value:        1000000                                     # Pressure value.
+            value:        1100000                                     # Pressure value.
          temperature:
             type:         Dirichlet                                   # Options: Law of wall, Specified Value (DI), Zero normal gradient (NE).
             value:        300                                         # Temperature value.
