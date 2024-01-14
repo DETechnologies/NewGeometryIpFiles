@@ -43,7 +43,7 @@ output_control:
    output_multiplier:     1
    paraview_catalyst_flag: 0
 grid_control:
-   base_grid:             [0.001, 0.001, 0.001]
+   base_grid:             [0.0005, 0.0005, 0.0005]
    grid_scale:            1
    amr_flag:              1
    events_flag:           1

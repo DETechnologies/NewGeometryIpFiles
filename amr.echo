@@ -3,7 +3,7 @@ version: 3.1.11
 
 amr_settings:
    cycle_steady:          100
-   max_cells:             100000000
+   max_cells:             15000000
    min_cells:             1
    embed_frequency:       1
    release_frequency:     25
@@ -19,7 +19,7 @@ amr_groups:
          amr_temperature:
             active:       1
             embed_scale:  4
-            sgs_embed:    3
+            sgs_embed:    2
             temporal_type: PERMANENT
             amr_type:     sgs
          amr_species:
