@@ -59,12 +59,12 @@ transport:
       omega:              0.5
       preconditioner:     None
    pres:
-      solver_type:        CONVERGE_BICGSTAB
+      solver_type:        CONVERGE_BICGSTAB_GPU
       tol:                1e-08
       itmin:              2
       itmax:              1000
       omega:              1.1
-      preconditioner:     SOR
+      preconditioner:     None
    density:
       solver_type:        SOR
       tol:                0.0001

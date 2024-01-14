@@ -60,12 +60,12 @@ transport:
       omega:              0.5                                         # Under-relaxation used in solving momentum equation.
       preconditioner:     None                                        # Preconditioner used in solving the equation.
    pres:
-      solver_type:        CONVERGE_BICGSTAB                           # Linear solver method - SOR/HYPRE_BICGSTAB/CONVERGE_BICGSTAB/AMGX/CONVERGE_BICGSTAB_GPU.
+      solver_type:        CONVERGE_BICGSTAB_GPU                       # Linear solver method - SOR/HYPRE_BICGSTAB/CONVERGE_BICGSTAB/AMGX/CONVERGE_BICGSTAB_GPU.
       tol:                1e-08                                       # Convergence tolerance for the pressure equation.
       itmin:              2                                           # Minimum number of solver iterations.
       itmax:              1000                                        # Maximum number of solver iterations.
       omega:              1.1                                         # Under/over-relaxation used in solving pressure equation.
-      preconditioner:     SOR                                         # Preconditioner used in solving the equation.
+      preconditioner:     None                                        # Preconditioner used in solving the equation.
    density:
       solver_type:        SOR                                         # Linear solver method - SOR/HYPRE_BICGSTAB/CONVERGE_BICGSTAB.
       tol:                0.0001                                      # Convergence tolerance for the density transport equation.
