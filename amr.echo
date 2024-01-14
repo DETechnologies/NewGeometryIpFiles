@@ -1,0 +1,41 @@
+version: 3.1.11
+---
+
+amr_settings:
+   cycle_steady:          100
+   max_cells:             15000000
+   min_cells:             1
+   embed_frequency:       1
+   release_frequency:     25
+amr_groups:
+   -  amr_group:
+         amr_regions:     [2, 3, 0, 1]
+         amr_velocity:
+            active:       1
+            embed_scale:  2
+            sgs_embed:    2
+            temporal_type: PERMANENT
+            amr_type:     sgs
+         amr_temperature:
+            active:       1
+            embed_scale:  5
+            sgs_embed:    1
+            temporal_type: PERMANENT
+            amr_type:     sgs
+         amr_species:
+            species_active: 0
+            default_embed_scale: 2
+            species_list:
+               -  species:
+                     active: 1
+                     name: OH
+                     sgs_embed: 0.001
+                     temporal_type: PERMANENT
+                     amr_type: sgs
+amr_bounds:
+   []
+amr_yplus_restrict:
+   []
+amr_proximity:
+   []
+

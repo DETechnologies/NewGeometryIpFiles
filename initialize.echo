@@ -1,0 +1,59 @@
+version: 3.1.11
+---
+
+-  region:
+      region_id:          0
+      vel_init:           [0, 0, 0]
+      temp_init:          300
+      pres_init:          1000000
+      turbulence_init:
+         approach:        value
+         value:
+            sgs_ke:       1
+      species_init:
+         h2:              0.135
+         o2:              0.865
+      passive_init:
+         {}
+-  region:
+      region_id:          1
+      vel_init:           [0, 0, 0]
+      temp_init:          2000
+      pres_init:          101325
+      turbulence_init:
+         approach:        value
+         value:
+            sgs_ke:       1
+      species_init:
+         n2:              1
+      passive_init:
+         {}
+-  region:
+      region_id:          2
+      vel_init:           [-800, 0, 0]
+      temp_init:          3000
+      pres_init:          1000000
+      turbulence_init:
+         approach:        value
+         value:
+            sgs_ke:       1
+      species_init:
+         h2:              0.135
+         o2:              0.865
+      passive_init:
+         {}
+-  region:
+      region_id:          3
+      vel_init:           [0, 0, 0]
+      temp_init:          300
+      pres_init:          100000
+      turbulence_init:
+         approach:        value
+         value:
+            sgs_ke:       1
+      species_init:
+         h2:              0.135
+         o2:              0.865
+      passive_init:
+         {}
+
