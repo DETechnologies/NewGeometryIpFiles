@@ -3,7 +3,7 @@ version: 3.1.11
 
 amr_settings:
    cycle_steady:          100
-   max_cells:             20000000
+   max_cells:             9000000
    min_cells:             1
    embed_frequency:       1
    release_frequency:     25

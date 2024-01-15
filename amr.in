@@ -4,7 +4,7 @@ version: 3.1
 
 amr_settings:
    cycle_steady:          100                                         # Number of cycles between AMR calculations.
-   max_cells:             20000000                                    # Maximum number of cells in the entire domain.
+   max_cells:             9000000                                     # Maximum number of cells in the entire domain.
    min_cells:             1                                           # Minimum number of cells in the entire domain.
    embed_frequency:       1                                           # Specify number of cycles/iterations between embed events.
    release_frequency:     25                                          # Specify number of cycles/iterations between release events.
