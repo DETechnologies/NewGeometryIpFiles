@@ -13,13 +13,13 @@ amr_groups:
          amr_velocity:
             active:       1
             embed_scale:  5
-            sgs_embed:    2
+            sgs_embed:    5
             temporal_type: PERMANENT
             amr_type:     sgs
          amr_temperature:
             active:       1
             embed_scale:  8
-            sgs_embed:    2
+            sgs_embed:    15
             temporal_type: PERMANENT
             amr_type:     sgs
          amr_species:
