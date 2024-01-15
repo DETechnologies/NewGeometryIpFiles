@@ -44,7 +44,7 @@ output_control:
    output_multiplier:     1                                           # Scale extrinsic quantities by this value as they are written to .out files.
    paraview_catalyst_flag: 0                                          # Triggers use of ParaView Catalyst (requires paraview_catalyst.in). 0: Not activated.
 grid_control:
-   base_grid:             [0.001, 0.001, 0.001]                       # Maximum cell size (dx, dy, dz) in x, y, z direction (m).
+   base_grid:             [0.002, 0.002, 0.002]                       # Maximum cell size (dx, dy, dz) in x, y, z direction (m).
    grid_scale:            1                                           # Value of n in dx_base/2^n.
    amr_flag:              1                                           # Flag to activate AMR: 0=do not use AMR, 1=use AMR (requires amr.in).
    events_flag:           1                                           # Flag to activate events: 0=do not use events, 1= use (requires events.in).
