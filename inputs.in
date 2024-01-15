@@ -130,6 +130,6 @@ ga_control:
 mpi_control:
    shared_memory_flag:    1                                           # Use MPI shared memory feature to reduce memory usage especially for large surface files.
 accelerator_control:
-   use_gpu_flag:          1                                           # Flag to activate GPU computation: 0 = Do not use GPU computation, 1 = Use GPU computation (can only be used with CONVERGE_BICGSTAB_GPU option for Pressure equation (transport.pres.solver_type in solver.in) on certain NVIDIA GPUs).
-   enable_pin_mem:        1                                           # Flag to activate the pinned memory to enhance the bandwidth of data movement between CPU/GPU.
+   use_gpu_flag:          0                                           # Flag to activate GPU computation: 0 = Do not use GPU computation, 1 = Use GPU computation (can only be used with CONVERGE_BICGSTAB_GPU option for Pressure equation (transport.pres.solver_type in solver.in) on certain NVIDIA GPUs).
+   enable_pin_mem:        0                                           # Flag to activate the pinned memory to enhance the bandwidth of data movement between CPU/GPU.
 
