@@ -11,8 +11,8 @@ version: 3.1.11
          value:
             sgs_ke:       1
       species_init:
-         h2:              0.135
-         o2:              0.865
+         h2:              0.1116
+         o2:              0.8884
       passive_init:
          {}
 -  region:
@@ -38,8 +38,8 @@ version: 3.1.11
          value:
             sgs_ke:       1
       species_init:
-         h2:              0.135
-         o2:              0.865
+         h2:              0.1116
+         o2:              0.8884
       passive_init:
          {}
 -  region:
@@ -52,8 +52,8 @@ version: 3.1.11
          value:
             sgs_ke:       1
       species_init:
-         h2:              0.135
-         o2:              0.865
+         h2:              0.1116
+         o2:              0.8884
       passive_init:
          {}
 

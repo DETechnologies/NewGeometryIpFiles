@@ -19,8 +19,8 @@ boundary_conditions:
          species:
             type:         Dirichlet
             value:
-               h2:        0.135
-               o2:        0.865
+               h2:        0.1116
+               o2:        0.8884
          passive:
             type:         Dirichlet
             value:
