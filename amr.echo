@@ -18,8 +18,8 @@ amr_groups:
             amr_type:     sgs
          amr_temperature:
             active:       1
-            embed_scale:  2
-            sgs_embed:    5
+            embed_scale:  5
+            sgs_embed:    3
             temporal_type: PERMANENT
             amr_type:     sgs
          amr_species:
