@@ -5,7 +5,7 @@ version: 3.1.11
       region_id:          0
       vel_init:           [0, 0, 0]
       temp_init:          300
-      pres_init:          1333333
+      pres_init:          1500000
       turbulence_init:
          approach:        value
          value:
