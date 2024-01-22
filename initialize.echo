@@ -25,12 +25,12 @@ version: 3.1.11
          value:
             sgs_ke:       1
       species_init:
-         o2:              1
+         h2o:             1
       passive_init:
          {}
 -  region:
       region_id:          2
-      vel_init:           [-2500, 0, 0]
+      vel_init:           [-2000, 0, 0]
       temp_init:          4000
       pres_init:          1000000
       turbulence_init:
@@ -44,7 +44,7 @@ version: 3.1.11
          {}
 -  region:
       region_id:          3
-      vel_init:           [-2000, 0, 0]
+      vel_init:           [0, 0, 0]
       temp_init:          300
       pres_init:          100000
       turbulence_init:

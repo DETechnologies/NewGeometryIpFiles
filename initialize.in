@@ -26,12 +26,12 @@ version: 3.1
          value:
             sgs_ke:       1
       species_init:
-         O2:              1
+         H2O:             1
       passive_init:
          {}
 -  region:
       region_id:          2                                           # Region ID.
-      vel_init:           [-2500, 0, 0]                               # Initial velocity in the region (m/s).
+      vel_init:           [-2000, 0, 0]                               # Initial velocity in the region (m/s).
       temp_init:          4000                                        # Initial temperature in the region (K).
       pres_init:          1000000                                     # Initial absolute pressure in the region (Pa).
       turbulence_init:
@@ -45,7 +45,7 @@ version: 3.1
          {}
 -  region:
       region_id:          3                                           # Region ID.
-      vel_init:           [-2000, 0, 0]                               # Initial velocity in the region (m/s).
+      vel_init:           [0, 0, 0]                                   # Initial velocity in the region (m/s).
       temp_init:          300                                         # Initial temperature in the region (K).
       pres_init:          100000                                      # Initial absolute pressure in the region (Pa).
       turbulence_init:
