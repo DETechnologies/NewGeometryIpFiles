@@ -38,7 +38,7 @@ boundary_conditions:
          geometry_motion: FIXED
          roughness:
             height:       0
-            constant:     0.5
+            constant:     0.25
          velocity:
             type:         Law_of_wall
             value:        [0, 0, 0]
@@ -64,7 +64,7 @@ boundary_conditions:
          geometry_motion: FIXED
          roughness:
             height:       0
-            constant:     0.5
+            constant:     0.25
          velocity:
             type:         Law_of_wall
             value:        [0, 0, 0]
@@ -90,7 +90,7 @@ boundary_conditions:
          geometry_motion: FIXED
          roughness:
             height:       0
-            constant:     0.5
+            constant:     0.25
          velocity:
             type:         Law_of_wall
             value:        [0, 0, 0]

@@ -39,7 +39,7 @@ boundary_conditions:
          geometry_motion: FIXED
          roughness:
             height:       0                                           # Absolute surface roughness in meters.
-            constant:     0.5                                         # A coefficient used in the roughness law of the wall model.
+            constant:     0.25                                        # A coefficient used in the roughness law of the wall model.
          velocity:
             type:         Law_of_wall                                 # Options: Law of wall, Slip, No-slip, Specified Value (DI), Zero normal gradient (NE), Mass flow, Pump, GT-SUITE.
             value:        [0, 0, 0]                                   # Directional velocity vector components (or USER, AUTO_GENERATE (piston motion), MOTION_CONFIG, profile name).
@@ -65,7 +65,7 @@ boundary_conditions:
          geometry_motion: FIXED
          roughness:
             height:       0                                           # Absolute surface roughness in meters.
-            constant:     0.5                                         # A coefficient used in the roughness law of the wall model.
+            constant:     0.25                                        # A coefficient used in the roughness law of the wall model.
          velocity:
             type:         Law_of_wall                                 # Options: Law of wall, Slip, No-slip, Specified Value (DI), Zero normal gradient (NE), Mass flow, Pump, GT-SUITE.
             value:        [0, 0, 0]                                   # Directional velocity vector components (or USER, AUTO_GENERATE (piston motion), MOTION_CONFIG, profile name).
@@ -91,7 +91,7 @@ boundary_conditions:
          geometry_motion: FIXED
          roughness:
             height:       0                                           # Absolute surface roughness in meters.
-            constant:     0.5                                         # A coefficient used in the roughness law of the wall model.
+            constant:     0.25                                        # A coefficient used in the roughness law of the wall model.
          velocity:
             type:         Law_of_wall                                 # Options: Law of wall, Slip, No-slip, Specified Value (DI), Zero normal gradient (NE), Mass flow, Pump, GT-SUITE.
             value:        [0, 0, 0]                                   # Directional velocity vector components (or USER, AUTO_GENERATE (piston motion), MOTION_CONFIG, profile name).
