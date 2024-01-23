@@ -4,7 +4,7 @@ version: 3.1
 
 amr_settings:
    cycle_steady:          100                                         # Number of cycles between AMR calculations.
-   max_cells:             90000000                                    # Maximum number of cells in the entire domain.
+   max_cells:             110000000                                   # Maximum number of cells in the entire domain.
    min_cells:             1                                           # Minimum number of cells in the entire domain.
    embed_frequency:       1                                           # Specify number of cycles/iterations between embed events.
    release_frequency:     25                                          # Specify number of cycles/iterations between release events.
@@ -19,8 +19,8 @@ amr_groups:
             amr_type:     sgs
          amr_temperature:
             active:       1                                           # Enable AMR based on temperature conditions.
-            embed_scale:  5                                           # Maximum embedding level for temperature.
-            sgs_embed:    3                                           # Minimum temperature sub-grid value above which a cell will be embedded.
+            embed_scale:  8                                           # Maximum embedding level for temperature.
+            sgs_embed:    2                                           # Minimum temperature sub-grid value above which a cell will be embedded.
             temporal_type: PERMANENT                                  # Timing control type.
             amr_type:     sgs
          amr_species:
