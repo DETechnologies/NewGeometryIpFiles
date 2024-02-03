@@ -4,8 +4,8 @@ version: 3.1.11
 -  region:
       region_id:          0
       vel_init:           [0, 0, 0]
-      temp_init:          300
-      pres_init:          1000000
+      temp_init:          293
+      pres_init:          130000
       turbulence_init:
          approach:        value
          value:
@@ -18,7 +18,7 @@ version: 3.1.11
 -  region:
       region_id:          1
       vel_init:           [0, 0, 0]
-      temp_init:          300
+      temp_init:          293
       pres_init:          101325
       turbulence_init:
          approach:        value
@@ -30,9 +30,9 @@ version: 3.1.11
          {}
 -  region:
       region_id:          2
-      vel_init:           [-1500, 0, 0]
-      temp_init:          900
-      pres_init:          500000
+      vel_init:           [-1000, 0, 0]
+      temp_init:          293
+      pres_init:          130000
       turbulence_init:
          approach:        value
          value:
@@ -45,8 +45,8 @@ version: 3.1.11
 -  region:
       region_id:          3
       vel_init:           [0, 0, 0]
-      temp_init:          300
-      pres_init:          100000
+      temp_init:          293
+      pres_init:          90000
       turbulence_init:
          approach:        value
          value:

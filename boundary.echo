@@ -12,10 +12,10 @@ boundary_conditions:
             value:        [0, 0, 0]
          pressure:
             type:         Dirichlet_total
-            value:        1000000
+            value:        130000
          temperature:
             type:         Dirichlet
-            value:        300
+            value:        293
          species:
             type:         Dirichlet
             value:
