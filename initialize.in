@@ -32,8 +32,8 @@ version: 3.1
 -  region:
       region_id:          2                                           # Region ID.
       vel_init:           [-1000, 0, 0]                               # Initial velocity in the region (m/s).
-      temp_init:          293                                         # Initial temperature in the region (K).
-      pres_init:          130000                                      # Initial absolute pressure in the region (Pa).
+      temp_init:          2600                                        # Initial temperature in the region (K).
+      pres_init:          170000                                      # Initial absolute pressure in the region (Pa).
       turbulence_init:
          approach:        value
          value:
@@ -46,7 +46,7 @@ version: 3.1
 -  region:
       region_id:          3                                           # Region ID.
       vel_init:           [0, 0, 0]                                   # Initial velocity in the region (m/s).
-      temp_init:          273                                         # Initial temperature in the region (K).
+      temp_init:          280                                         # Initial temperature in the region (K).
       pres_init:          50000                                       # Initial absolute pressure in the region (Pa).
       turbulence_init:
          approach:        value
