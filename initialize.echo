@@ -45,8 +45,8 @@ version: 3.1.11
 -  region:
       region_id:          3
       vel_init:           [0, 0, 0]
-      temp_init:          293
-      pres_init:          90000
+      temp_init:          273
+      pres_init:          50000
       turbulence_init:
          approach:        value
          value:

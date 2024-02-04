@@ -19,7 +19,7 @@ simulation_control:
    random_seed:           0                                           # Random seed number.
 output_control:
    log_level:             2                                           # Screen print level.
-   twrite_post:           1e-05                                       # Time interval for writing 3D output (s/crank angle/cycle).
+   twrite_post:           5e-06                                       # Time interval for writing 3D output (s/crank angle/cycle).
    twrite_transfer:       10                                          # Time interval for writing heat transfer output data (s/crank angle/cycle).
    twrite_files:          1e-09                                       # Time interval for writing text data files (s/crank angle/cycle).
    twrite_restart:        1e-05                                       # Time interval for writing restart output (s/crank angle/cycle).
@@ -44,7 +44,7 @@ output_control:
    output_multiplier:     1                                           # Scale extrinsic quantities by this value as they are written to .out files.
    paraview_catalyst_flag: 0                                          # Triggers use of ParaView Catalyst (requires paraview_catalyst.in). 0: Not activated.
 grid_control:
-   base_grid:             [0.002, 0.002, 0.002]                       # Maximum cell size (dx, dy, dz) in x, y, z direction (m).
+   base_grid:             [0.0015, 0.0015, 0.0015]                    # Maximum cell size (dx, dy, dz) in x, y, z direction (m).
    grid_scale:            1                                           # Value of n in dx_base/2^n.
    amr_flag:              1                                           # Flag to activate AMR: 0=do not use AMR, 1=use AMR (requires amr.in).
    events_flag:           1                                           # Flag to activate events: 0=do not use events, 1= use (requires events.in).
