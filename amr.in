@@ -19,8 +19,8 @@ amr_groups:
             amr_type:     sgs
          amr_temperature:
             active:       1                                           # Enable AMR based on temperature conditions.
-            embed_scale:  10                                          # Maximum embedding level for temperature.
-            sgs_embed:    1                                           # Minimum temperature sub-grid value above which a cell will be embedded.
+            embed_scale:  5                                           # Maximum embedding level for temperature.
+            sgs_embed:    5                                           # Minimum temperature sub-grid value above which a cell will be embedded.
             temporal_type: PERMANENT                                  # Timing control type.
             amr_type:     sgs
          amr_species:
