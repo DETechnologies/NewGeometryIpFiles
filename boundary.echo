@@ -46,7 +46,7 @@ boundary_conditions:
             type:         Neumann
          temperature:
             type:         Law_of_wall
-            value:        300
+            value:        293
          species:
             type:         Neumann
          passive:
@@ -72,7 +72,7 @@ boundary_conditions:
             type:         Neumann
          temperature:
             type:         Law_of_wall
-            value:        300
+            value:        293
          species:
             type:         Neumann
          passive:
@@ -98,7 +98,7 @@ boundary_conditions:
             type:         Neumann
          temperature:
             type:         Law_of_wall
-            value:        300
+            value:        293
          species:
             type:         Neumann
          passive:
@@ -133,7 +133,7 @@ boundary_conditions:
          backflow:
             temperature:
                type:      Dirichlet
-               value:     300
+               value:     293
             species:
                type:      Dirichlet
                value:
@@ -154,7 +154,7 @@ boundary_conditions:
          match:
             boundary_id:  7
             type:         TRANSLATIONAL
-            direction:    [0.48, 0, 0]
+            direction:    [0.15837, 0, 0]
    -  boundary:
          id:              7
          type:            PERIODIC
@@ -170,7 +170,7 @@ boundary_conditions:
          match:
             boundary_id:  9
             type:         TRANSLATIONAL
-            direction:    [0.48, 0, 0]
+            direction:    [0.15837, 0, 0]
    -  boundary:
          id:              9
          type:            PERIODIC

@@ -47,7 +47,7 @@ boundary_conditions:
             type:         Neumann                                     # Pressure type: Neumann, Dirichlet, Dirichlet_total (for INFLOW), Transonic (for OUTFLOW).
          temperature:
             type:         Law_of_wall                                 # Options: Law of wall, Specified Value (DI), Zero normal gradient (NE).
-            value:        300                                         # Temperature value.
+            value:        293                                         # Temperature value.
          species:
             type:         Neumann                                     # Species type: Zero normal gradient (NE), Specified Value (DI).
          passive:
@@ -73,7 +73,7 @@ boundary_conditions:
             type:         Neumann                                     # Pressure type: Neumann, Dirichlet, Dirichlet_total (for INFLOW), Transonic (for OUTFLOW).
          temperature:
             type:         Law_of_wall                                 # Options: Law of wall, Specified Value (DI), Zero normal gradient (NE).
-            value:        300                                         # Temperature value.
+            value:        293                                         # Temperature value.
          species:
             type:         Neumann                                     # Species type: Zero normal gradient (NE), Specified Value (DI).
          passive:
@@ -99,7 +99,7 @@ boundary_conditions:
             type:         Neumann                                     # Pressure type: Neumann, Dirichlet, Dirichlet_total (for INFLOW), Transonic (for OUTFLOW).
          temperature:
             type:         Law_of_wall                                 # Options: Law of wall, Specified Value (DI), Zero normal gradient (NE).
-            value:        300                                         # Temperature value.
+            value:        293                                         # Temperature value.
          species:
             type:         Neumann                                     # Species type: Zero normal gradient (NE), Specified Value (DI).
          passive:
@@ -134,7 +134,7 @@ boundary_conditions:
          backflow:
             temperature:
                type:      Dirichlet
-               value:     300
+               value:     293
             species:
                type:      Dirichlet                                   # Options: Specified Value (DI).
                value:
@@ -155,7 +155,7 @@ boundary_conditions:
          match:
             boundary_id:  7                                           # PERIODIC matching boundary ID in CONVERGE.
             type:         TRANSLATIONAL                               # Options: Rotational, Translational.
-            direction:    [0.48, 0, 0]
+            direction:    [0.15837, 0, 0]
    -  boundary:
          id:              7                                           # Boundary ID. Default boundary ID is 0.
          type:            PERIODIC                                    # Options: WALL, INFLOW, OUTFLOW, PERIODIC, SYMMETRY, TWO_D, GT-SUITE, INTERFACE, FLOW_THROUGH.
@@ -171,7 +171,7 @@ boundary_conditions:
          match:
             boundary_id:  9                                           # PERIODIC matching boundary ID in CONVERGE.
             type:         TRANSLATIONAL                               # Options: Rotational, Translational.
-            direction:    [0.48, 0, 0]
+            direction:    [0.15837, 0, 0]
    -  boundary:
          id:              9                                           # Boundary ID. Default boundary ID is 0.
          type:            PERIODIC                                    # Options: WALL, INFLOW, OUTFLOW, PERIODIC, SYMMETRY, TWO_D, GT-SUITE, INTERFACE, FLOW_THROUGH.
