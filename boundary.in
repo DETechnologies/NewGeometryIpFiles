@@ -155,7 +155,7 @@ boundary_conditions:
          match:
             boundary_id:  7                                           # PERIODIC matching boundary ID in CONVERGE.
             type:         TRANSLATIONAL                               # Options: Rotational, Translational.
-            direction:    [0.15837, 0, 0]
+            direction:    [0.1583677, 0, 0]
    -  boundary:
          id:              7                                           # Boundary ID. Default boundary ID is 0.
          type:            PERIODIC                                    # Options: WALL, INFLOW, OUTFLOW, PERIODIC, SYMMETRY, TWO_D, GT-SUITE, INTERFACE, FLOW_THROUGH.
@@ -171,7 +171,7 @@ boundary_conditions:
          match:
             boundary_id:  9                                           # PERIODIC matching boundary ID in CONVERGE.
             type:         TRANSLATIONAL                               # Options: Rotational, Translational.
-            direction:    [0.15837, 0, 0]
+            direction:    [0.1583677, 0, 0]
    -  boundary:
          id:              9                                           # Boundary ID. Default boundary ID is 0.
          type:            PERIODIC                                    # Options: WALL, INFLOW, OUTFLOW, PERIODIC, SYMMETRY, TWO_D, GT-SUITE, INTERFACE, FLOW_THROUGH.
