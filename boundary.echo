@@ -1,0 +1,221 @@
+version: 3.1.11
+---
+
+boundary_conditions:
+   -  boundary:
+         id:              1
+         type:            INFLOW
+         name:            inflow
+         region:          0
+         velocity:
+            type:         Neumann
+            value:        [0, 0, 0]
+         pressure:
+            type:         Dirichlet_total
+            value:        250000
+         temperature:
+            type:         Dirichlet
+            value:        300
+         species:
+            type:         Dirichlet
+            value:
+               h2:        0.1116
+               o2:        0.8884
+         passive:
+            type:         Dirichlet
+            value:
+               {}
+         turbulence:
+            sgs_ke:
+               type:      Intensity
+               value:     0.01
+   -  boundary:
+         id:              2
+         type:            WALL
+         name:            nozzles
+         region:          0
+         motion:          STATIONARY
+         geometry_motion: FIXED
+         roughness:
+            height:       0
+            constant:     0.25
+         velocity:
+            type:         Law_of_wall
+            value:        [0, 0, 0]
+         pressure:
+            type:         Neumann
+         temperature:
+            type:         Law_of_wall
+            value:        300
+         species:
+            type:         Neumann
+         passive:
+            type:         Neumann
+         turbulence:
+            sgs_ke:
+               type:      Neumann
+               value:     0
+   -  boundary:
+         id:              3
+         type:            WALL
+         name:            faceplate to pre-ignition zone
+         region:          3
+         motion:          STATIONARY
+         geometry_motion: FIXED
+         roughness:
+            height:       0
+            constant:     0.25
+         velocity:
+            type:         Law_of_wall
+            value:        [0, 0, 0]
+         pressure:
+            type:         Neumann
+         temperature:
+            type:         Law_of_wall
+            value:        300
+         species:
+            type:         Neumann
+         passive:
+            type:         Neumann
+         turbulence:
+            sgs_ke:
+               type:      Neumann
+               value:     0
+   -  boundary:
+         id:              4
+         type:            WALL
+         name:            faceplate to ignition zone
+         region:          2
+         motion:          STATIONARY
+         geometry_motion: FIXED
+         roughness:
+            height:       0
+            constant:     0.25
+         velocity:
+            type:         Law_of_wall
+            value:        [0, 0, 0]
+         pressure:
+            type:         Neumann
+         temperature:
+            type:         Law_of_wall
+            value:        300
+         species:
+            type:         Neumann
+         passive:
+            type:         Neumann
+         turbulence:
+            sgs_ke:
+               type:      Neumann
+               value:     0
+   -  boundary:
+         id:              5
+         type:            OUTFLOW
+         name:            outflow
+         region:          1
+         velocity:
+            type:         Neumann
+            value:        [0, 0, 0]
+         pressure:
+            type:         Dirichlet
+            value:        101325
+            presdist:     0
+         temperature:
+            type:         Neumann
+            value:        0
+         species:
+            type:         Neumann
+         passive:
+            type:         Neumann
+         turbulence:
+            sgs_ke:
+               type:      Neumann
+               value:     0
+         backflow:
+            temperature:
+               type:      Dirichlet
+               value:     293
+            species:
+               type:      Dirichlet
+               value:
+                  h2o:    1
+            passive:
+               type:      Dirichlet
+               value:
+                  {}
+            turbulence:
+               sgs_ke:
+                  type:   Intensity
+                  value:  1e-06
+   -  boundary:
+         id:              6
+         type:            PERIODIC
+         name:            periodic-nozzle X-
+         region:          0
+         match:
+            boundary_id:  7
+            type:         TRANSLATIONAL
+            direction:    [0.1583677, 0, 0]
+   -  boundary:
+         id:              7
+         type:            PERIODIC
+         name:            periodic-nozzle X+
+         region:          0
+         match:
+            boundary_id:  6
+   -  boundary:
+         id:              8
+         type:            PERIODIC
+         name:            periodic-combustor X-
+         region:          1
+         match:
+            boundary_id:  9
+            type:         TRANSLATIONAL
+            direction:    [0.1583677, 0, 0]
+   -  boundary:
+         id:              9
+         type:            PERIODIC
+         name:            periodic-combustor X+
+         region:          1
+         match:
+            boundary_id:  8
+   -  boundary:
+         id:              10
+         type:            TWO_D
+         name:            2D-nozzle Z-
+         region:          0
+   -  boundary:
+         id:              11
+         type:            TWO_D
+         name:            2D-nozzle Z+
+         region:          0
+   -  boundary:
+         id:              12
+         type:            TWO_D
+         name:            2D-combustor Z-
+         region:          1
+   -  boundary:
+         id:              13
+         type:            TWO_D
+         name:            2D-combustor Z+
+         region:          1
+   -  boundary:
+         id:              14
+         type:            TWO_D
+         name:            2D pre-ignition zone Z-
+         region:          3
+   -  boundary:
+         id:              15
+         type:            TWO_D
+         name:            2D pre-ignition zone Z+
+         region:          3
+   -  boundary:
+         id:              16
+         type:            TWO_D
+         name:            2D ignition zone Z-
+         region:          2
+   -  boundary:
+         id:              17
+         type:            TWO_D
+         name:            2D ignition zone Z+
+         region:          2
+

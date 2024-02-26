@@ -1,0 +1,20 @@
+version: 3.1.11
+---
+
+combust_region_control:
+   -  combust_region:
+         region_id:       1
+         temporal_type:   PERMANENT
+         start_time:      -999999
+         end_time:        -999999
+   -  combust_region:
+         region_id:       2
+         temporal_type:   PERMANENT
+         start_time:      -999999
+         end_time:        -999999
+   -  combust_region:
+         region_id:       3
+         temporal_type:   PERMANENT
+         start_time:      -999999
+         end_time:        -999999
+

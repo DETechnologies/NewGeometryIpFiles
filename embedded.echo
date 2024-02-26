@@ -1,0 +1,31 @@
+version: 3.1.11
+---
+
+-  embedding:
+      embed_type:         BOUND
+      boundary_id:        2
+      embed_scale:        2
+      num_embed:          1
+      temporal_type:      PERMANENT
+      start_time:         -999999
+      end_time:           -999999
+      description:        Embedding 1
+-  embedding:
+      embed_type:         BOUND
+      boundary_id:        4
+      embed_scale:        2
+      num_embed:          1
+      temporal_type:      PERMANENT
+      start_time:         -999999
+      end_time:           -999999
+      description:        Embedding 3
+-  embedding:
+      embed_type:         BOUND
+      boundary_id:        3
+      embed_scale:        2
+      num_embed:          1
+      temporal_type:      PERMANENT
+      start_time:         -999999
+      end_time:           -999999
+      description:        Embedding 4
+
